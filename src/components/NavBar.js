@@ -27,10 +27,12 @@ const Navbar = ({ name }) => {
       <div className="navbar">
         <h3>
           {/* according to the current time it shows morning,afternoon, and night */}
-          {hour <= 12
+          {hour <= 24
             ? "Good Morning! Rise and Shine"
+            : hour <= 12
+            ? "Good afternoon! Had your lunch?"
             : hour <= 17
-            ? "Afternoon! Have a tea,but Beware over consumption is not good"
+            ? "Have a tea,but Beware over consumption is not good"
             : hour <= 22
             ? "Good night"
             : "A healthy mind needs a healthy sleep" }
