@@ -17,7 +17,7 @@ const Day = ({day}) => {
   // function call after clicking done icon--------------
   const markToDone=()=>{
     if(day.id>todayDay){
-      alert("You cannot change your next days status")
+      alert("You cannot change next day's status")
       return;
     }
     // calling habit done action from reducer
@@ -28,7 +28,7 @@ const Day = ({day}) => {
   // function call after clicking undone icon------------
   const markToUnDone=()=>{
     if(day.id>todayDay){
-      alert("You cannot change your next days status")
+      alert("You cannot change next day's status")
       return;
     }
     // calling habit undone action from reducer
@@ -39,7 +39,7 @@ const Day = ({day}) => {
   // function call after clicking none icon--------------
   const markToNone=()=>{
     if(day.id>todayDay){
-      alert("You cannot change your next days status")
+      alert("You cannot change next day's status")
       return;
     }
     // calling habit none action from reducer
